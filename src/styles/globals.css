@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+h1 {
+  @apply text-4xl font-bold md:text-6xl;
+}
+
+h2 {
+  @apply text-2xl font-semibold md:text-4xl;
+}
